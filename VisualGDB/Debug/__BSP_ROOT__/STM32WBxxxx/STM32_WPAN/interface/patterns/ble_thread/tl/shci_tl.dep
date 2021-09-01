@@ -1,0 +1,137 @@
+VisualGDB/Debug/__BSP_ROOT__/STM32WBxxxx/STM32_WPAN/interface/patterns/ble_thread/tl/shci_tl.o: \
+ C:/Users/jchiaramonte/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32wb/STM32WBxxxx/STM32_WPAN/interface/patterns/ble_thread/tl/shci_tl.c \
+ C:/Users/jchiaramonte/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32wb/STM32WBxxxx/STM32_WPAN/stm32_wpan_common.h \
+ c:\sysgcc\arm-eabi\lib\gcc\arm-none-eabi\9.3.1\include\stdint.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\stdint.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\machine\_default_types.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\features.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\_newlib_version.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\_intsup.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\_stdint.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\string.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\_ansi.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\newlib.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\config.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\machine\ieeefp.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\reent.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\_ansi.h \
+ c:\sysgcc\arm-eabi\lib\gcc\arm-none-eabi\9.3.1\include\stddef.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\_types.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\machine\_types.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\lock.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\cdefs.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\_locale.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\strings.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\string.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\stdio.h \
+ c:\sysgcc\arm-eabi\lib\gcc\arm-none-eabi\9.3.1\include\stdarg.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\types.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\machine\endian.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\machine\_endian.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\select.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\_sigset.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\_timeval.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\timespec.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\_timespec.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\_pthreadtypes.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\sched.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\machine\types.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\stdio.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\stdlib.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\machine\stdlib.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\alloca.h \
+ C:/Users/jchiaramonte/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32wb/STM32WBxxxx/CMSIS_HAL/Core/Include/cmsis_compiler.h \
+ C:/Users/jchiaramonte/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32wb/STM32WBxxxx/CMSIS_HAL/Core/Include/cmsis_gcc.h \
+ C:/Users/jchiaramonte/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32wb/STM32WBxxxx/STM32_WPAN/utilities/stm_list.h \
+ C:/Users/jchiaramonte/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32wb/STM32WBxxxx/STM32_WPAN/interface/patterns/ble_thread/tl/shci_tl.h \
+ C:/Users/jchiaramonte/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32wb/STM32WBxxxx/STM32_WPAN/interface/patterns/ble_thread/tl/tl.h
+
+C:/Users/jchiaramonte/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32wb/STM32WBxxxx/STM32_WPAN/stm32_wpan_common.h:
+
+c:\sysgcc\arm-eabi\lib\gcc\arm-none-eabi\9.3.1\include\stdint.h:
+
+c:\sysgcc\arm-eabi\arm-none-eabi\include\stdint.h:
+
+c:\sysgcc\arm-eabi\arm-none-eabi\include\machine\_default_types.h:
+
+c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\features.h:
+
+c:\sysgcc\arm-eabi\arm-none-eabi\include\_newlib_version.h:
+
+c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\_intsup.h:
+
+c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\_stdint.h:
+
+c:\sysgcc\arm-eabi\arm-none-eabi\include\string.h:
+
+c:\sysgcc\arm-eabi\arm-none-eabi\include\_ansi.h:
+
+c:\sysgcc\arm-eabi\arm-none-eabi\include\newlib.h:
+
+c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\config.h:
+
+c:\sysgcc\arm-eabi\arm-none-eabi\include\machine\ieeefp.h:
+
+c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\reent.h:
+
+c:\sysgcc\arm-eabi\arm-none-eabi\include\_ansi.h:
+
+c:\sysgcc\arm-eabi\lib\gcc\arm-none-eabi\9.3.1\include\stddef.h:
+
+c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\_types.h:
+
+c:\sysgcc\arm-eabi\arm-none-eabi\include\machine\_types.h:
+
+c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\lock.h:
+
+c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\cdefs.h:
+
+c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\_locale.h:
+
+c:\sysgcc\arm-eabi\arm-none-eabi\include\strings.h:
+
+c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\string.h:
+
+c:\sysgcc\arm-eabi\arm-none-eabi\include\stdio.h:
+
+c:\sysgcc\arm-eabi\lib\gcc\arm-none-eabi\9.3.1\include\stdarg.h:
+
+c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\types.h:
+
+c:\sysgcc\arm-eabi\arm-none-eabi\include\machine\endian.h:
+
+c:\sysgcc\arm-eabi\arm-none-eabi\include\machine\_endian.h:
+
+c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\select.h:
+
+c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\_sigset.h:
+
+c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\_timeval.h:
+
+c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\timespec.h:
+
+c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\_timespec.h:
+
+c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\_pthreadtypes.h:
+
+c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\sched.h:
+
+c:\sysgcc\arm-eabi\arm-none-eabi\include\machine\types.h:
+
+c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\stdio.h:
+
+c:\sysgcc\arm-eabi\arm-none-eabi\include\stdlib.h:
+
+c:\sysgcc\arm-eabi\arm-none-eabi\include\machine\stdlib.h:
+
+c:\sysgcc\arm-eabi\arm-none-eabi\include\alloca.h:
+
+C:/Users/jchiaramonte/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32wb/STM32WBxxxx/CMSIS_HAL/Core/Include/cmsis_compiler.h:
+
+C:/Users/jchiaramonte/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32wb/STM32WBxxxx/CMSIS_HAL/Core/Include/cmsis_gcc.h:
+
+C:/Users/jchiaramonte/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32wb/STM32WBxxxx/STM32_WPAN/utilities/stm_list.h:
+
+C:/Users/jchiaramonte/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32wb/STM32WBxxxx/STM32_WPAN/interface/patterns/ble_thread/tl/shci_tl.h:
+
+C:/Users/jchiaramonte/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32wb/STM32WBxxxx/STM32_WPAN/interface/patterns/ble_thread/tl/tl.h:

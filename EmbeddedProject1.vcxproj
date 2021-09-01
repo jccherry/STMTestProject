@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|VisualGDB">
+      <Configuration>Debug</Configuration>
+      <Platform>VisualGDB</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|VisualGDB">
+      <Configuration>Release</Configuration>
+      <Platform>VisualGDB</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{7C33C4AC-5A4B-45F2-911E-9BD102DE3755}</ProjectGuid>
+    <BSP_ID>com.sysprogs.arm.stm32wb</BSP_ID>
+    <BSP_VERSION>2020.05</BSP_VERSION>
+    <InPlaceBSPSubdir />
+    <RelativeBSPPath />
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <GNUConfigurationType>Debug</GNUConfigurationType>
+    <ToolchainID>com.visualgdb.arm-eabi</ToolchainID>
+    <ToolchainVersion>9.3.1/9.2.0/r2</ToolchainVersion>
+    <MCUPropertyListFile>$(ProjectDir)stm32wb.props</MCUPropertyListFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <ToolchainID>com.visualgdb.arm-eabi</ToolchainID>
+    <ToolchainVersion>9.3.1/9.2.0/r2</ToolchainVersion>
+    <MCUPropertyListFile>$(ProjectDir)stm32wb.props</MCUPropertyListFile>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>Core/Inc;STM32_WPAN/App;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>Core/Inc;STM32_WPAN/App;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ItemGroup>
+    <None Include=".extSettings" />
+    <None Include="BLE_HeartRate.ioc" />
+    <None Include="readme.txt" />
+    <ClCompile Include="Core\Src\app_debug.c" />
+    <ClCompile Include="Core\Src\app_entry.c" />
+    <ClCompile Include="Core\Src\hw_timerserver.c" />
+    <ClCompile Include="Core\Src\hw_uart.c" />
+    <ClCompile Include="Core\Src\main.c" />
+    <ClCompile Include="Core\Src\stm32wbxx_hal_msp.c" />
+    <ClCompile Include="Core\Src\stm32wbxx_it.c" />
+    <ClCompile Include="Core\Src\stm32_lpm_if.c" />
+    <ClCompile Include="Core\Src\system_stm32wbxx.c" />
+    <ClCompile Include="STM32_WPAN\App\app_ble.c" />
+    <ClCompile Include="STM32_WPAN\App\dis_app.c" />
+    <ClCompile Include="STM32_WPAN\App\hrs_app.c" />
+    <ClCompile Include="STM32_WPAN\Target\hw_ipcc.c" />
+    <None Include="stm32wb.props" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\StartupFiles\startup_stm32wb55xx_cm4.c" />
+    <ClCompile Include="$(BSP_ROOT)\Utilities\lpm\tiny_lpm\stm32_lpm.c" />
+    <ClCompile Include="$(BSP_ROOT)\Utilities\sequencer\stm32_seq.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\core\auto\ble_events.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\core\auto\ble_gap_aci.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\core\auto\ble_gatt_aci.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\core\auto\ble_hal_aci.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\core\auto\ble_hci_le.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\core\auto\ble_l2cap_aci.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\core\template\osal.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\svc\Src\dis.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\svc\Src\hrs.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\svc\Src\svc_ctl.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\interface\patterns\ble_thread\shci\shci.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\interface\patterns\ble_thread\tl\hci_tl.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\interface\patterns\ble_thread\tl\hci_tl_if.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\interface\patterns\ble_thread\tl\shci_tl.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\interface\patterns\ble_thread\tl\shci_tl_if.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\interface\patterns\ble_thread\tl\tl_mbox.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\BSP\P-NUCLEO-WB55.Nucleo\stm32wbxx_nucleo.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\utilities\dbg_trace.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\utilities\otp.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\utilities\stm_list.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\utilities\stm_queue.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_adc.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_adc_ex.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_comp.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_cortex.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_crc.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_crc_ex.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_cryp.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_cryp_ex.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_dma.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_dma_ex.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_exti.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_flash.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_flash_ex.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_gpio.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_hsem.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_i2c.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_i2c_ex.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_i2s.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_ipcc.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_irda.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_iwdg.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_lcd.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_lptim.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_pcd.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_pcd_ex.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_pka.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_pwr.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_pwr_ex.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_qspi.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_rcc.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_rcc_ex.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_rng.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_rtc.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_rtc_ex.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_sai.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_sai_ex.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_smartcard.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_smartcard_ex.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_smbus.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_spi.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_spi_ex.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_tim.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_tim_ex.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_tsc.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_uart.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_uart_ex.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_usart.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_usart_ex.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_hal_wwdg.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Src\stm32wbxx_ll_usb.c" />
+    <ClInclude Include="Core\Inc\app_common.h" />
+    <ClInclude Include="Core\Inc\app_conf.h" />
+    <ClInclude Include="Core\Inc\app_debug.h" />
+    <ClInclude Include="Core\Inc\app_entry.h" />
+    <ClInclude Include="Core\Inc\hw_conf.h" />
+    <ClInclude Include="Core\Inc\hw_if.h" />
+    <ClInclude Include="Core\Inc\main.h" />
+    <ClInclude Include="Core\Inc\stm32wbxx_hal_conf.h" />
+    <ClInclude Include="Core\Inc\stm32wbxx_it.h" />
+    <ClInclude Include="Core\Inc\stm32_lpm_if.h" />
+    <ClInclude Include="Core\Inc\utilities_conf.h" />
+    <ClInclude Include="STM32_WPAN\App\app_ble.h" />
+    <ClInclude Include="STM32_WPAN\App\ble_conf.h" />
+    <ClInclude Include="STM32_WPAN\App\ble_dbg_conf.h" />
+    <ClInclude Include="STM32_WPAN\App\dis_app.h" />
+    <ClInclude Include="STM32_WPAN\App\hrs_app.h" />
+    <ClInclude Include="$(BSP_ROOT)\Utilities\lpm\tiny_lpm\stm32_lpm.h" />
+    <ClInclude Include="$(BSP_ROOT)\Utilities\sequencer\stm32_seq.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\core\ble_bufsize.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\core\ble_core.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\core\ble_defs.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\core\ble_legacy.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\core\ble_std.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\core\auto\ble_events.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\core\auto\ble_gap_aci.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\core\auto\ble_gatt_aci.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\core\auto\ble_hal_aci.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\core\auto\ble_hci_le.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\core\auto\ble_l2cap_aci.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\core\auto\ble_types.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\core\template\ble_const.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\core\template\compiler.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\core\template\osal.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\svc\Inc\dis.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\svc\Inc\hrs.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\svc\Inc\svc_ctl.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\svc\Inc\uuid.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\ble\svc\Src\common_blesvc.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\interface\patterns\ble_thread\hw.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\interface\patterns\ble_thread\conf\tl_conf_template.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\interface\patterns\ble_thread\conf\vcp_conf_template.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\interface\patterns\ble_thread\shci\shci.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\interface\patterns\ble_thread\tl\hci_tl.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\interface\patterns\ble_thread\tl\mbox_def.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\interface\patterns\ble_thread\tl\shci_tl.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\interface\patterns\ble_thread\tl\tl.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\interface\patterns\ble_thread\tl\tl_mac_802_15_4.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\BSP\P-NUCLEO-WB55.Nucleo\stm32wbxx_nucleo.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\utilities\dbg_trace.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\utilities\otp.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\utilities\stm_list.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\utilities\stm_queue.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32_WPAN\utilities\utilities_common.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_adc.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_adc_ex.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_comp.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_cortex.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_crc.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_crc_ex.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_cryp.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_cryp_ex.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_def.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_dma.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_dma_ex.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_exti.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_flash.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_flash_ex.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_gpio.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_gpio_ex.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_hsem.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_i2c.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_i2c_ex.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_i2s.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_ipcc.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_irda.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_irda_ex.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_iwdg.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_lcd.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_lptim.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_pcd.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_pcd_ex.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_pka.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_pwr.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_pwr_ex.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_qspi.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_rcc.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_rcc_ex.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_rng.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_rtc.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_rtc_ex.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_sai.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_sai_ex.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_smartcard.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_smartcard_ex.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_smbus.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_spi.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_spi_ex.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_tim.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_tim_ex.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_tsc.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_uart.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_uart_ex.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_usart.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_usart_ex.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_hal_wwdg.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\stm32wbxx_ll_usb.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\STM32WBxx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\CMSIS_HAL\Include\cmsis_armcc.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\CMSIS_HAL\Include\cmsis_armclang.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\CMSIS_HAL\Include\cmsis_compiler.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\CMSIS_HAL\Include\cmsis_gcc.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\CMSIS_HAL\Include\cmsis_iccarm.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\CMSIS_HAL\Include\cmsis_version.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\CMSIS_HAL\Include\core_armv8mbl.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\CMSIS_HAL\Include\core_armv8mml.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\CMSIS_HAL\Include\core_cm0.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\CMSIS_HAL\Include\core_cm0plus.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\CMSIS_HAL\Include\core_cm1.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\CMSIS_HAL\Include\core_cm23.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\CMSIS_HAL\Include\core_cm3.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\CMSIS_HAL\Include\core_cm33.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\CMSIS_HAL\Include\core_cm4.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\CMSIS_HAL\Include\core_cm7.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\CMSIS_HAL\Include\core_sc000.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\CMSIS_HAL\Include\core_sc300.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\CMSIS_HAL\Include\mpu_armv7.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\CMSIS_HAL\Include\mpu_armv8.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\CMSIS_HAL\Include\tz_context.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\CMSIS_HAL\Device\ST\STM32WBxx\Include\stm32wbxx.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\CMSIS_HAL\Device\ST\STM32WBxx\Include\system_stm32wbxx.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32WBxxxx\CMSIS_HAL\RTOS\Template\cmsis_os.h" />
+    <None Include="EmbeddedProject1-Debug.vgdbsettings" />
+    <None Include="EmbeddedProject1-Release.vgdbsettings" />
+    <None Include="stm32wb.xml" />
+  </ItemGroup>
+</Project>
